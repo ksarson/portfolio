@@ -1,11 +1,18 @@
-import './App.css';
+import './styles/App.scss';
+import Header from './components/header/Header';
+import Nav from './components/nav/Nav';
+import Main from './components/main/Main';
+import Footer from './components/footer/Footer';
 
-function App() {
+const App = () => {
     return (
         <>
-            <h1>Test Webpage</h1>
+            <Header />
+            <Nav />
+            <Main />
+            <Footer />
         </>
     );
-}
+};
 
 export default App;
