@@ -1,8 +1,7 @@
+@import 'Variables.scss';
+
 .tech-stack {
-    background-color: #dadada;
-    border: 2px solid #c0c0c0;
-    border-radius: 5px;
     padding: 10px 0;
-    color: black;
+    color: $primary-gray;
     align-items: center;
 }

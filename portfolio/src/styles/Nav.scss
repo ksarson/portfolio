@@ -1,9 +1,8 @@
+@import 'Variables.scss';
+
 nav {
-    background-color: #dadada;
-    border: 2px solid #c0c0c0;
-    border-radius: 5px;
     padding: 10px 0;
-    color: white;
+    color: $primary-gray;
 
     ul {
         display: inline-block;
@@ -18,12 +17,12 @@ nav {
     }
 
     a {
-        color: rgb(48, 48, 48);
+        color: $primary-gray;
         text-decoration: none;
     }
 
     a:visited {
-        color: rgb(128, 128, 128);
+        color: $tertiary-gray;
         text-decoration: none;
     }
 }
