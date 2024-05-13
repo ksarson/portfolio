@@ -1,9 +1,33 @@
 @import 'Variables.scss';
 
 footer {
-    background-color: $primary-gray;
+    background-color: $dark-gray;
     padding: 10px 0;
-    color: $primary-white;
-    font-weight: 700;
+    color: $white;
+    font-size: 12px;
     align-items: center;
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        display: inline-block;
+        color: $white;
+        font-weight: 700;
+        margin: 0 10px;
+    }
+
+    a {
+        color: $white;
+        font-weight: 700;
+        text-decoration: none;
+    }
+
+    a:visited {
+        color: $light-gray;
+        text-decoration: none;
+    }
 }

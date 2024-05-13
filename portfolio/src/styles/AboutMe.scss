@@ -1,8 +1,13 @@
 @import 'Variables.scss';
 
 .about-me {
-    background-color: $primary-blue;
+    background-color: $light-gray;
     padding: 10px 0;
-    color: $primary-white;
+    color: $dark-gray;
     align-items: center;
+}
+
+.highlight {
+    color: $dark-aqua;
+    font-weight: 700;
 }
