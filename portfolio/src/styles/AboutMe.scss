@@ -1,13 +1,62 @@
 @import 'Variables.scss';
 
 .about-me {
-    background-color: $light-gray;
+    background-color: $lightest-gray;
     padding: 10px 0;
-    color: $dark-gray;
+    color: $darkest-gray;
     align-items: center;
+    font-size: 0.75rem;
+}
+
+.about-me-header {
+    margin: 6px;
+    font-weight: 700;
+}
+
+.headshot {
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px 0 $darkest-gray;
+    width: 3rem;
+    height: 3rem;
+    margin: 0 auto;
+    display: block;
+}
+
+.wave {
+    display: inline-block;
+    animation: animate-wave 500ms infinite ease-in-out;
+}
+
+.icon-img {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 0 0.5rem;
+    color: $darkest-gray;
+}
+
+a:visited .icon-img {
+    color: $gray;
+}
+
+.about-me-paragraph {
+    margin: 6px 0;
 }
 
 .highlight {
-    color: $dark-aqua;
+    color: $aqua;
     font-weight: 700;
+}
+
+@keyframes animate-wave {
+    0% {
+        transform: rotate(0);
+    }
+
+    50% {
+        transform: rotate(30deg);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
 }
