@@ -1,0 +1,12 @@
+@import 'Variables.scss';
+
+.icon-img {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 0 0.5rem;
+    color: $darkest-gray;
+}
+
+a:visited .icon-img {
+    color: $gray;
+}

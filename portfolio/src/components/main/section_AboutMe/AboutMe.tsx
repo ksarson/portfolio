@@ -1,12 +1,8 @@
 import '../../../styles/AboutMe.scss';
 import headshot from '../../../assets/headshot.jpg';
 import resume from '../../../assets/KSarsonResumeWeb.pdf';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-    faLinkedin,
-    faGithub,
-    IconDefinition,
-} from '@fortawesome/free-brands-svg-icons';
+import IconLink from '../../common/IconLink';
+import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope, faFilePdf } from '@fortawesome/free-solid-svg-icons';
 
 const AboutMe = () => {
@@ -18,36 +14,13 @@ const AboutMe = () => {
                 <span className="wave">👋</span>
             </h1>
             <div className="about-me-links">
-                <a
-                    href="https://www.linkedin.com/in/sarsonk/"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                >
-                    <FontAwesomeIcon icon={faLinkedin} className="icon-img" />
-                </a>
-                <a
-                    href="https://github.com/ksarson"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                >
-                    <FontAwesomeIcon icon={faGithub} className="icon-img" />
-                </a>
-                <a
-                    href="mailto:ksarson10@gmail.com"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                >
-                    <FontAwesomeIcon
-                        icon={faEnvelope as IconDefinition}
-                        className="icon-img"
-                    />
-                </a>
-                <a href={resume} rel="noopener noreferrer" target="_blank">
-                    <FontAwesomeIcon
-                        icon={faFilePdf as IconDefinition}
-                        className="icon-img"
-                    />
-                </a>
+                <IconLink
+                    href="https://www.linkedin.com/in/kolbysarson/"
+                    icon={faLinkedin}
+                />
+                <IconLink href="https://github.com/ksarson" icon={faGithub} />
+                <IconLink href="mailto:ksarson10@gmail.com" icon={faEnvelope} />
+                <IconLink href={resume} icon={faFilePdf} />
             </div>
             <p className="about-me-paragraph">
                 {`A motivated `}
