@@ -2,14 +2,14 @@
 
 footer {
     background-color: $dark-gray;
-    padding: 0.5rem 0;
+    padding: 0.25rem 0;
     color: $off-white;
-    font-size: 0.75rem;
     align-items: center;
 
     ul {
         list-style-type: none;
-        margin: 0.25rem;
+        margin: 0;
+        font-size: 1rem;
         padding: 0;
     }
 
@@ -17,6 +17,10 @@ footer {
         display: inline-block;
         color: $aqua;
         margin: 0 10px;
+    }
+
+    li:hover {
+        transform: scale(1.2);
     }
 
     a {
@@ -28,10 +32,15 @@ footer {
         color: $aqua;
         text-decoration: none;
     }
+
+    .copyright {
+        margin: 0.5rem 0 0.25rem 0;
+        font-size: 0.75rem;
+    }
 }
 
 .footer-logo {
     width: 4rem;
     height: 2rem;
-    margin: 0;
+    margin: 0.5rem 0 0.25rem 0;
 }

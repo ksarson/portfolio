@@ -16,7 +16,7 @@ const Footer = () => {
                     <a href="#email">Email</a>
                 </li>
                 <li>
-                    <a href="#resume">Resume</a>
+                    <a href="#resume">Resumé</a>
                 </li>
             </ul>
             <div className="copyright">Copyright Ⓒ 2024 Kolby Sarson</div>

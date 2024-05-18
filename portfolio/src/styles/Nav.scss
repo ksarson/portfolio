@@ -16,6 +16,10 @@ nav {
         margin: 0 10px;
     }
 
+    li:hover {
+        transform: scale(1.1);
+    }
+
     a {
         color: $darkest-gray;
         text-decoration: none;

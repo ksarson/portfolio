@@ -13,3 +13,23 @@ body {
     padding: 0;
     background-color: $off-white;
 }
+
+section {
+    padding: 12px 4vw;
+}
+
+p {
+    max-width: 1600px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.section-header {
+    margin: 6px;
+    font-weight: 700;
+}
+
+.highlight {
+    color: $aqua;
+    font-weight: 700;
+}

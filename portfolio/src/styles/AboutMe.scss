@@ -2,15 +2,8 @@
 
 .about-me {
     background-color: $lightest-gray;
-    padding: 10px 0;
     color: $darkest-gray;
     align-items: center;
-    font-size: 0.75rem;
-}
-
-.about-me-header {
-    margin: 6px;
-    font-weight: 700;
 }
 
 .headshot {
@@ -18,7 +11,7 @@
     box-shadow: 2px 2px 5px 0 $darkest-gray;
     width: 3rem;
     height: 3rem;
-    margin: 0 auto;
+    margin: 0.25rem auto;
     display: block;
 }
 
@@ -28,12 +21,7 @@
 }
 
 .about-me-paragraph {
-    margin: 0.5rem 1.25rem;
-}
-
-.highlight {
-    color: $aqua;
-    font-weight: 700;
+    font-size: 0.85rem;
 }
 
 @keyframes animate-wave {

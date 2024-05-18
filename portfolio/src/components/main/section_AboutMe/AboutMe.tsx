@@ -8,7 +8,7 @@ import { faEnvelope, faFilePdf } from '@fortawesome/free-solid-svg-icons';
 const AboutMe = () => {
     return (
         <section className="about-me">
-            <h1 className="about-me-header">
+            <h1 className="section-header">
                 <img src={headshot} alt="Headshot" className="headshot" /> Hey,
                 I&apos;m <span className="highlight">Kolby</span>!{' '}
                 <span className="wave">👋</span>
