@@ -1,0 +1,69 @@
+@import 'Variables.scss';
+
+.carousel-item {
+    position: relative;
+    margin: 0 auto;
+    background-color: $dark-gray;
+    border: solid $gray 1px;
+    border-radius: 8px;
+    box-shadow: 0px 3px 12px 2px $gray;
+    min-height: 200px;
+    max-height: 700px;
+    width: 80vw;
+}
+
+.carousel-img {
+    border-radius: 8px;
+    height: 100%;
+    width: 100%;
+    min-height: 200px;
+    max-height: 700px;
+    display: block;
+    object-fit: fill;
+}
+
+.carousel-description {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    z-index: 2;
+}
+
+.carousel-img:hover {
+    opacity: 0.3;
+    filter: blur(5px);
+}
+
+.carousel-img:hover + .carousel-description {
+    opacity: 1;
+}
+
+.prev-button,
+.next-button {
+    position: absolute;
+    border: solid $gray 1px;
+    border-radius: 4px;
+    height: 40%;
+    width: 20px;
+    top: 30%; // half of the (containerHeight - buttonHeight)
+    background-color: $gray;
+    color: white;
+    cursor: pointer;
+    z-index: 1;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.prev-button {
+    left: 0;
+    transform: translateX(-150%);
+}
+
+.next-button {
+    right: 0;
+    transform: translateX(150%);
+}

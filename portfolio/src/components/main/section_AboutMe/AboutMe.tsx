@@ -11,7 +11,7 @@ const AboutMe = () => {
             <h1 className="section-header">
                 <img src={headshot} alt="Headshot" className="headshot" /> Hey,
                 I&apos;m <span className="highlight">Kolby</span>!{' '}
-                <span className="wave">👋</span>
+                <span className="wave">&#128075;</span>
             </h1>
             <div className="about-me-links">
                 <IconLink
