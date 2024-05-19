@@ -1,10 +1,23 @@
 @import 'Variables.scss';
 
 header {
+    position: relative;
     background-color: $dark-gray;
     padding: 10px 0;
     color: $mint;
     font-weight: 700;
     font-size: 2rem;
     align-items: center;
+}
+
+.nav-open-button {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: $dark-gray;
+    color: $mint;
+    border: solid $mint 2px;
+    border-radius: 4px;
+    padding: 6px 10px;
 }

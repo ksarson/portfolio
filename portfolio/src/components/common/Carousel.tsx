@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 
 interface CarouselItem {
     imgUrl: string;
+    title: string;
+    techStack: string[];
     description: string;
 }
 
@@ -47,13 +49,21 @@ const Carousel: React.FC<CarouselProps> = ({ carouselItemList }) => {
                             className="carousel-img"
                         />
                         <div
-                            className="carousel-description"
+                            className="carousel-item-info"
                             style={{
                                 display:
                                     index === currentIndex ? 'block' : 'none',
                             }}
                         >
-                            {item.description}
+                            <div className="carousel-item-title">
+                                {item.title}
+                            </div>
+                            <div className="carousel-item-tech-stack">
+                                {item.techStack.join(' | ')}
+                            </div>
+                            <div className="carousel-item-description">
+                                {item.description}
+                            </div>
                         </div>
                     </div>
                     <button onClick={handleNext} className="next-button">

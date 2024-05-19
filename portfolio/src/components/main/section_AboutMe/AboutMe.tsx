@@ -7,7 +7,7 @@ import { faEnvelope, faFilePdf } from '@fortawesome/free-solid-svg-icons';
 
 const AboutMe = () => {
     return (
-        <section className="about-me">
+        <section id="aboutMe" className="about-me">
             <h1 className="section-header">
                 <img src={headshot} alt="Headshot" className="headshot" /> Hey,
                 I&apos;m <span className="highlight">Kolby</span>!{' '}
@@ -25,8 +25,11 @@ const AboutMe = () => {
             <p className="about-me-paragraph">
                 {`A motivated `}
                 <span className="highlight">full-stack developer</span>
-                {` with both a Bachelor's and Master's degree in Computer Science.
-                With over a year of real-world experience in the `}
+                {` with both a `}
+                <span className="highlight">Bachelor&apos;s</span>
+                {` and `}
+                <span className="highlight">Master&apos;s</span>
+                {` degree in Computer Science. With over a year of real-world experience in the `}
                 <span className="highlight">.NET/React</span>
                 {` stack, I've developed a knack for crafting `}
                 <span className="highlight">elegant solutions</span>

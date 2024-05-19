@@ -11,7 +11,7 @@ import tsIcon from '../../../assets/logo_ts.svg';
 
 const TechStack = () => {
     return (
-        <section className="tech-stack">
+        <section id="techStack" className="tech-stack">
             <h1 className="section-header">
                 My <span className="highlight">Tech Stack</span>
             </h1>

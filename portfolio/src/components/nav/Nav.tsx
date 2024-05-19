@@ -5,10 +5,10 @@ const Nav = () => {
         <nav>
             <ul>
                 <li>
-                    <a href="#home">About Me</a>
+                    <a href="#aboutMe">About Me</a>
                 </li>
                 <li>
-                    <a href="#about">Tech Stack</a>
+                    <a href="#techStack">Tech Stack</a>
                 </li>
                 <li>
                     <a href="#projects">Projects</a>
