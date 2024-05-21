@@ -1,6 +1,44 @@
 @import 'Variables.scss';
 
-nav {
+.nav {
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    padding: 0;
+    line-height: 0;
+    color: $darkest-gray;
+
+    ul {
+        display: inline-block;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        color: $darkest-gray;
+        margin: 0 10px;
+    }
+
+    li:hover {
+        transform: scale(1.1);
+    }
+
+    a {
+        color: $darkest-gray;
+        text-decoration: none;
+    }
+
+    a:visited {
+        color: $gray;
+        text-decoration: none;
+    }
+}
+
+.nav-show {
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+    visibility: visible;
     padding: 10px 0;
     color: $darkest-gray;
 

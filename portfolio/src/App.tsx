@@ -11,7 +11,7 @@ const App = () => {
     return (
         <>
             <Header showNav={showNav} setShowNav={setShowNav} />
-            {showNav && <Nav />}
+            <Nav showNav={showNav} />
             <Main />
             <Footer />
         </>
