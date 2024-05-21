@@ -24,53 +24,54 @@ const Carousel: React.FC<CarouselProps> = ({ carouselItemList }) => {
     };
 
     const handleNext = () => {
-        setCurrentIndex((prevIndex) =>
-            prevIndex === carouselItemList.length - 1 ? 0 : prevIndex + 1,
+        setCurrentIndex(
+            (prevIndex) => (prevIndex + 1) % carouselItemList.length,
         );
     };
 
     return (
-        <div>
-            {carouselItemList.map((item, index) => (
-                <div
-                    key={index}
-                    style={{
-                        display: index === currentIndex ? 'block' : 'none',
-                    }}
-                    className="carousel-item"
-                >
-                    <button onClick={handlePrev} className="prev-button">
-                        &lt;
-                    </button>
-                    <div className="carousel-img-container">
-                        <img
-                            src={item.imgUrl}
-                            alt="Carousel Item"
-                            className="carousel-img"
-                        />
-                        <div
-                            className="carousel-item-info"
-                            style={{
-                                display:
-                                    index === currentIndex ? 'block' : 'none',
-                            }}
-                        >
-                            <div className="carousel-item-title">
-                                {item.title}
-                            </div>
-                            <div className="carousel-item-tech-stack">
-                                {item.techStack.join(' | ')}
-                            </div>
-                            <div className="carousel-item-description">
-                                {item.description}
+        <div className="carousel">
+            <button onClick={handlePrev} className="prev-button">
+                &lt;
+            </button>
+            <div
+                className="carousel-track"
+                style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+            >
+                {carouselItemList.map((item, index) => (
+                    <div key={index} className="carousel-item">
+                        <div className="carousel-img-container">
+                            <img
+                                src={item.imgUrl}
+                                alt="Carousel Item"
+                                className="carousel-img"
+                            />
+                            <div
+                                className="carousel-item-info"
+                                style={{
+                                    display:
+                                        index === currentIndex
+                                            ? 'block'
+                                            : 'none',
+                                }}
+                            >
+                                <div className="carousel-item-title">
+                                    {item.title}
+                                </div>
+                                <div className="carousel-item-tech-stack">
+                                    {item.techStack.join(' | ')}
+                                </div>
+                                <div className="carousel-item-description">
+                                    {item.description}
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <button onClick={handleNext} className="next-button">
-                        &gt;
-                    </button>
-                </div>
-            ))}
+                ))}
+            </div>
+            <button onClick={handleNext} className="next-button">
+                &gt;
+            </button>
         </div>
     );
 };
