@@ -44,7 +44,10 @@ const Projects = () => {
             <h1 className="section-header">
                 My <span className="highlight">Projects</span>
             </h1>
-            <Carousel carouselItemList={carouselItemList} />
+            <Carousel
+                hasHoverEffect={true}
+                carouselItemList={carouselItemList}
+            />
         </section>
     );
 };

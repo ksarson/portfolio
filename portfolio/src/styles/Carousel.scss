@@ -26,6 +26,7 @@
     min-height: 200px;
     max-height: 700px;
     width: 80vw;
+    object-fit: fill;
 }
 
 .carousel-img {
@@ -58,7 +59,7 @@
     font-weight: 700;
 }
 
-.carousel-img-container:hover {
+.carousel-img-container-hover:hover {
     .carousel-img {
         opacity: 0.3;
         filter: blur(8px);

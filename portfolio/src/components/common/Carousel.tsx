@@ -3,18 +3,22 @@ import PropTypes from 'prop-types';
 
 interface CarouselItem {
     imgUrl: string;
-    title: string;
-    techStack: string[];
-    description: string;
+    title: string | undefined;
+    techStack: string[] | undefined;
+    description: string | undefined;
 }
 
 interface CarouselProps {
+    hasHoverEffect: boolean;
     carouselItemList: CarouselItem[];
 }
 
 import { useState } from 'react';
 
-const Carousel: React.FC<CarouselProps> = ({ carouselItemList }) => {
+const Carousel: React.FC<CarouselProps> = ({
+    hasHoverEffect,
+    carouselItemList,
+}) => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const handlePrev = () => {
@@ -40,7 +44,9 @@ const Carousel: React.FC<CarouselProps> = ({ carouselItemList }) => {
             >
                 {carouselItemList.map((item, index) => (
                     <div key={index} className="carousel-item">
-                        <div className="carousel-img-container">
+                        <div
+                            className={`carousel-img-container${hasHoverEffect ? '-hover' : ''}`}
+                        >
                             <img
                                 src={item.imgUrl}
                                 alt="Carousel Item"
@@ -59,7 +65,9 @@ const Carousel: React.FC<CarouselProps> = ({ carouselItemList }) => {
                                     {item.title}
                                 </div>
                                 <div className="carousel-item-tech-stack">
-                                    {item.techStack.join(' | ')}
+                                    {item.techStack
+                                        ? item.techStack.join(' | ')
+                                        : ''}
                                 </div>
                                 <div className="carousel-item-description">
                                     {item.description}
@@ -77,6 +85,7 @@ const Carousel: React.FC<CarouselProps> = ({ carouselItemList }) => {
 };
 
 Carousel.propTypes = {
+    hasHoverEffect: PropTypes.bool.isRequired,
     carouselItemList: PropTypes.array.isRequired,
 };
 
