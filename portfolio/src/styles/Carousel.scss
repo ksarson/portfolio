@@ -10,6 +10,7 @@
     min-height: 200px;
     max-height: 700px;
     width: 80vw;
+    max-width: 1600px;
 }
 
 .carousel-track {
@@ -27,6 +28,12 @@
     max-height: 700px;
     width: 80vw;
     object-fit: fill;
+}
+
+.carousel-img-container,
+.carousel-img-container-hover {
+    height: 100%;
+    width: 100%;
 }
 
 .carousel-img {

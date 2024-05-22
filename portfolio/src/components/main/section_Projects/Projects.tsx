@@ -7,7 +7,7 @@ import portfolioIteration1 from '../../../assets/portfolioIteration1.png';
 // #region Carousel Item Definitions
 const capstoneMapItem = {
     imgUrl: capstoneMapImage,
-    title: 'Hospice Mapping Application',
+    title: 'Hospice Mapping',
     techStack: ['CSS', 'HTML', 'JS', 'PHP'],
     description: `A Mapping visualization with pins and colour coding
     of patients for both quick and easy access to information on their patients, 
@@ -16,7 +16,7 @@ const capstoneMapItem = {
 
 const dropletAdditionItem = {
     imgUrl: dropletAdditionImage,
-    title: 'Droplet Addition Math Game',
+    title: 'Addition Math Game',
     techStack: ['CSS', 'HTML', 'JS', 'React'],
     description: `A redesign of a simple math game emphasizing
     'Human Computer Interaction' and 'Design Principles'.`,
