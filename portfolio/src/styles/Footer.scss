@@ -13,6 +13,12 @@ footer {
         padding: 0;
     }
 
+    @media (min-width: $mobile-max-width) {
+        ul {
+            font-size: 1.25rem;
+        }
+    }
+
     li {
         display: inline-block;
         color: $aqua;
@@ -34,8 +40,15 @@ footer {
     }
 
     .copyright {
-        margin: 0.5rem 0 0.25rem 0;
         font-size: 0.75rem;
+        margin: 0.5rem 0 0.25rem 0;
+    }
+
+    @media (min-width: $mobile-max-width) {
+        .copyright {
+            font-size: 1rem;
+            margin: 0.5rem 0;
+        }
     }
 }
 
@@ -43,4 +56,12 @@ footer {
     width: 4rem;
     height: 2rem;
     margin: 0.5rem 0 0.25rem 0;
+}
+
+@media (min-width: $mobile-max-width) {
+    .footer-logo {
+        width: 6rem;
+        height: 3rem;
+        margin: 1rem 0 0.5rem 0;
+    }
 }

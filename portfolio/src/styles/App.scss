@@ -29,6 +29,13 @@ p {
     font-weight: 700;
 }
 
+@media (min-width: $mobile-max-width) {
+    .section-header {
+        font-size: 2rem;
+        margin: 0.5rem auto;
+    }
+}
+
 .highlight {
     color: $aqua;
     font-weight: 700;

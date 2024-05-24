@@ -10,6 +10,12 @@ header {
     align-items: center;
 }
 
+@media (min-width: $mobile-max-width) {
+    header {
+        font-size: 3rem;
+    }
+}
+
 .nav-open-button {
     position: absolute;
     left: 10px;
@@ -20,4 +26,12 @@ header {
     border: solid $mint 2px;
     border-radius: 4px;
     padding: 6px 10px;
+}
+
+@media (min-width: $mobile-max-width) {
+    .nav-open-button {
+        left: 20px;
+        border: solid $mint 3px;
+        padding: 8px 12px;
+    }
 }

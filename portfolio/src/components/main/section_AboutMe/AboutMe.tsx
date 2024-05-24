@@ -9,8 +9,10 @@ const AboutMe = () => {
     return (
         <section id="aboutMe" className="about-me">
             <h1 className="section-header">
-                <img src={headshot} alt="Headshot" className="headshot" /> Hey,
-                I&apos;m <span className="highlight">Kolby</span>!{' '}
+                <img src={headshot} alt="Headshot" className="headshot" />
+                {` Hey, I'm `}
+                <span className="highlight">Kolby</span>
+                {`!`}
                 <span className="wave">&#128075;</span>
             </h1>
             <div className="about-me-links">
@@ -45,6 +47,30 @@ const AboutMe = () => {
                 {` and drive `}
                 <span className="highlight">innovation</span>
                 {` in the tech industry.`}
+            </p>
+            <p className="about-me-paragraph">
+                {`I am a passionate individual who enjoys a `}
+                <span className="highlight">well-rounded</span>
+                {` and `}
+                <span className="highlight">active lifestyle</span>
+                {`. When I'm not immersed in the world of software
+                development, you can find me `}
+                <span className="highlight">working out</span>
+                {` and maintaining a balanced and healthy lifestyle. `}
+                <span className="highlight">Paddleboarding</span>
+                {` is my go-to activity for unwinding and staying connected 
+                with nature during the summer, and have started `}
+                <span className="highlight">bouldering</span>
+                {` in the winter. I also thrive on `}
+                <span className="highlight">social events</span>,
+                {` where I can connect with others and share experiences. These hobbies 
+                and interests fuel my creativity and keep me energized, making me a `}
+                <span className="highlight">well-rounded individual</span>
+                {` not only `}
+                <span className="highlight">professionally</span>
+                {`, but also `}
+                <span className="highlight">personally</span>
+                {`.`}
             </p>
         </section>
     );
