@@ -1,6 +1,6 @@
 import '../../styles/Footer.scss';
 import Logo from '../../assets/logo.png';
-import resume from '../../../assets/KSarsonResumeWeb.pdf';
+import resume from '../../assets/KSarsonResumeWeb.pdf';
 
 const Footer = () => {
     return (
