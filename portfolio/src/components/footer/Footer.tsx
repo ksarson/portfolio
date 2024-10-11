@@ -1,5 +1,6 @@
 import '../../styles/Footer.scss';
 import Logo from '../../assets/logo.png';
+import resume from '../../../assets/KSarsonResumeWeb.pdf';
 
 const Footer = () => {
     return (
@@ -7,16 +8,16 @@ const Footer = () => {
             <img src={Logo} alt="Logo" className="footer-logo" />
             <ul>
                 <li>
-                    <a href="#github">GitHub</a>
+                    <a href="https://github.com/ksarson">GitHub</a>
                 </li>
                 <li>
-                    <a href="#linkedin">LinkedIn</a>
+                    <a href="https://www.linkedin.com/in/sarsonk/">LinkedIn</a>
                 </li>
                 <li>
-                    <a href="#email">Email</a>
+                    <a href="mailto:ksarson10@gmail.com">Email</a>
                 </li>
                 <li>
-                    <a href="#resume">Resumé</a>
+                    <a href={resume}>Resumé</a>
                 </li>
             </ul>
             <div className="copyright">Copyright Ⓒ 2024 Kolby Sarson</div>

@@ -17,7 +17,7 @@ const AboutMe = () => {
             </h1>
             <div className="about-me-links">
                 <IconLink
-                    href="https://www.linkedin.com/in/kolbysarson/"
+                    href="https://www.linkedin.com/in/sarsonk/"
                     icon={faLinkedin}
                 />
                 <IconLink href="https://github.com/ksarson" icon={faGithub} />
